@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+* p {
+  font-size: 14px;
+}
+
+/*! İndex */
+
+.upper-block {
+  position: fixed;
+  background-color: #011126;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+  z-index: 3;
+}
+
+.upper-block a {
+  text-decoration: none;
+}
+
+.log-reg-btn ul {
+  font-size: 14px;
+  list-style: none;
+  margin: 80px 0 15px 0;
+}
+
+.upper-block .log-reg-btn li {
+  padding: 10px 14px;
+  color: white;
+}
+
+.upper-block .log-reg-btn li:hover {
+  background: #d1d1d152;
+  transition: all .34s ease;
+}
+
+.profile-btn {
+  width: 200px;
+  font-size: 14px;
+  margin: 80px 0 15px 0;
+  padding: 0;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+}
+
+.dropdown-menu {
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  color: #011126;
+}
+
+.dropdown-menu li:hover {
+  background: #011126;
+  color: white;
+  transition: all .34s ease;
+}
+
+
+/** event */
+
+.event-card {
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+.event-card p {
+  margin-bottom: 8px;
+}
+
+.event-img {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #B3002C;
+  color: white;
+  top: 10px;
+  left: 10px;
+}
+
+.event-content svg {
+  color: #B3002C;
+}
+
+/** news */
+
+.news-head {
+  position: relative;
+  height: 450px;
+  background-image: url("media/news-head.jpg");
+  background-position-y: -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-head::before {
+  background: rgba(14, 24, 92, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+}
+
+.news-content {
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+}
+
+.news-content button {
+  background-color: #B3002C;
+  color: white;
+  border: 2px solid #B3002C;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.news-content button:hover {
+  background-color: none;
+  border: 2px solid white;
+  transition: all .34s ease;
+  font-weight: 600;
+}
+
+.news-card {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.news-card button {
+  background-color: #B3002C;
+  color: white;
+  border: 2px solid #B3002C;
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.news-card button:hover {
+  background-color: none;
+  border: 2px solid #011126;
+  transition: all .34s ease;
+  color: #011126;
+  font-weight: 600;
+}
+
+.news-img {
+  overflow: hidden;
+  height: 200px;
+}
+
+.news-img img {
+  transition: transform .8s;
+}
+
+.news-img img:hover {
+  transform: scale(1.1);
+}
+
+/*! Table Styles */
+
+.table-lessons {
+  font-size: 12px;
+  font-weight: normal;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-lessons tr {
+  border: 1px solid #cfcfcf;
+}
+
+.table-lessons td {
+  font-size: 13px;
+}
+
+.table-lessons td,
+.table-lessons th {
+  text-align: center;
+  padding: 20px;
+}
+
+.table-lessons thead th {
+  color: black;
+  background: #cfcfcf;
+  font-size: 15px;
+}
+
+.table-lessons tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+/** exam table */
+
+.table-exam {
+  font-size: 12px;
+  font-weight: normal;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-exam tr {
+  border: 1px solid #cfcfcf;
+}
+
+.table-exam td {
+  font-size: 13px;
+}
+
+.table-exam td,
+.table-exam th {
+  text-align: center;
+  padding: 20px;
+}
+
+.table-exam thead th {
+  color: black;
+  background: #cfcfcf;
+  font-size: 15px;
+}
+
+.table-exam tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.start-btn {
+  background-color: #B3002C;
+  border: 2px solid #B3002C;
+  color: white;
+  border-radius: 0;
+  padding: 7px 20px;
+  font-weight: 600;
+}
+
+.start-btn:hover {
+  border: 2px solid #011126;
+  color: #011126;
+  border-radius: 0;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+/*! exam */
+
+.exam-main {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.answers label {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.answers label p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.answers input[type="radio"] {
+  appearance: none;
+  border-radius: 0%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #011126;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.answers input[type="radio"]:checked {
+  border: 2px solid #B3002C;
+  background-color: #B3002C;
+}
+
+.q-numbers {
+  background-color: #B3002C;
+  color: white;
+  width: 100px;
+  padding: 10px 15px;
+  text-align: center;
+  align-content: center;
+}
+
+.counter {
+  position: relative;
+}
+
+.next-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.next-btn button {
+  background-color: #03A64A;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 0;
+  font-weight: 600;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.next-btn button:active {
+  transform: translateY(1px);
+}
+
+.next-btn button:hover {
+  background-color: #038C4C;
+}
+
+/*! Login */
+
+.login-main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("media/log-reg-bg2.jpg");
+  filter: blur(15px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.login {
+  width: 25%;
+  margin: auto;
+  background-color: white;
+  margin-top: 9rem;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 13px;
+}
+
+.login input {
+  margin-bottom: 5px;
+}
+
+.login button {
+  width: 80px;
+  display: block;
+  background-color: #B3002C;
+  border: 2px solid #B3002C;
+  color: white;
+  border-radius: 0;
+}
+
+.login button:hover {
+  border: 2px solid #011126;
+  color: #011126;
+}
+
+.uni-logo{
+  width: 100%;
+  text-align: center;
+}
+
+.login-area {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+/*! register */
+
+.register-main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("media/log-reg-bg2.jpg");
+  filter: blur(15px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-box {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.register {
+  width: 25%;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: white;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.register label {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 1px;
+}
+
+.register input {
+  margin-bottom: 5px;
+}
+
+.register button {
+  width: 90px;
+  display: block;
+  background-color: #B3002C;
+  border: 2px solid #B3002C;
+  color: white;
+  border-radius: 0;
+}
+
+.register button:hover {
+  border: 2px solid #011126;
+  color: #011126;
+}
+
+.uni-logo{
+  width: 100%;
+  text-align: center;
+}
+
+.register-area {
+  width: 52%;
+  margin: auto;
+  position: relative;
+}
+
+/*! profile */
+
+.profile-box {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 3rem 6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.profile-button {
+  background-color: #c7c7c7;
+  border: 2px solid #c7c7c7;
+  color: black;
+  border-radius: 0;
+}
+
+.profile-button:hover {
+  border: 2px solid black;
+  color: #011126;
+}
